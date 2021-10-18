@@ -1,0 +1,20 @@
+title SINGLE_PAGE_APP_NEW_NOTE
+
+note over browser
+create new note and
+push it to notes
+end note
+
+note over browser
+redraw notes
+end note
+
+browser-server HTTP POST httpsstudies.cs.helsinki.fiexampleappnew_note_spa
+
+note over server
+push new note to nots json
+end note
+
+server--browser 201 note created
+
+

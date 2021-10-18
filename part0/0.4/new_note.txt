@@ -1,0 +1,13 @@
+title NEW_NOTE
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over server:
+server push the new note to notes json
+end note
+
+server-->browser: 302: redirect to /notes
+
+note over browser:
+the rest steps are the same as open /notes
+end note
